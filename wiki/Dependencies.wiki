@@ -1,4 +1,3 @@
-== Dependencies ==
 There are a number of external libraries that Mono.Xna requires to be installed in order to run.  These include:
 
 === Windows ===
@@ -20,7 +19,6 @@ Also make sure that each .dll.config files have good values and are in the same 
 
 === Mac ===
 {{Stub}}
-
 
 
 

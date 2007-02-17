@@ -1,0 +1,10 @@
+== Status of Mono.Xna ==
+Mono.Xna is in early stages right now, but the end goal is to allow XNA projects to be compiled and run on platforms other then Windows, without having to change any code.  You can take a look at [http://www.taoframework.com/Mono.Xna:Todo TodoList] for a list of things that need to be worked on.
+
+== Contributing ==
+If you wish to contribute to the Mono.Xna project, please take a look at the [http://www.taoframework.com/Mono.Xna:Todo TodoList], register on [http://www.taoframework.com/forum/index.php?board=5.0 forum], and let us know how you can help. You should also register yourself on the [http://groups-beta.google.com/group/monoxna mailing list]. An irc channel is also available at #mono.xna on the GimpNET irc server.
+
+== Subversion access ==
+Mono.Xna's source code is kept in the Google Code subversion repository. For more informations click on the `Source` tab. 
+
+NB: if you used previously the Subversion repository located on the Mono Project server please update to this new repository.

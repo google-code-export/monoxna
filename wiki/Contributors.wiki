@@ -1,0 +1,13 @@
+Here are the persons who contributed to make Mono.Xna rocks :
+
+ * Rob Loach
+ * Alan McGovern
+ * A.J. Oja
+ * StApostol
+ * David Hudson
+ * C.J. Adams-Collier
+ * Jérémie Laval (Garuma)
+ * Ravuya
+ * olivier Dufour (Duff)
+
+

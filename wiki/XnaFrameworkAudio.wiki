@@ -1,0 +1,24 @@
+#summary Use this page has a sandbox for informations about XACT related file formats and how to implement sound playback from these files in Mono.Xna
+
+= XACT files formats =
+
+XACT is Microsoft Cross-Platform Audio Creation Tool. It's a GUI tool to assemble sounds, wave, effect etc... in a project and specify some informations about it like volume, when to trigger the sounds, how to store them etc...
+
+It accepts 3 sounds formats :
+  * WAV : should be simple to playback with the new System.Media namespace which is implemented in Mono 1.2.4
+  * XMA, a special format based on WMA : I think this will be the hardest to use. Does SDL Mixer support this ? Do we have to use FFMPEG ?
+  * AIFF : seems to be a standard format (http://en.wikipedia.org/wiki/AIFF). Looks like some sort of MIDI container ?
+
+http://msdn2.microsoft.com/en-us/library/bb172317.aspx 
+
+= XACT API ==
+
+XACT is also an API integrated in DirectSound to manage these file formats both with a high-level and low-level wrapper.
+
+http://msdn2.microsoft.com/en-us/library/bb172328.aspx
+
+I think Microsoft.Xna uses this native API internally as they did with the XBOX Gamepad (using xinput). Then it wouldn't be of too much hassle to do like this on Windows but what about other systems ?
+
+Should we use native call on Windows and somehow make a managed implementation on other systems ? Do like Mono's libgdiplus library, i.e. with write our own native version of xact so that on Windows Mono.Xna uses MS's Xact and on other systems it uses our own ?
+
+If we use the managed way, the file parser etc... would be written in managed code and the playback would be assured using either System.Media or P/Invoke into ffmpeg (or other) (maybe make a Tao.FFMpeg ?).

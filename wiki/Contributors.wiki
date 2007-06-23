@@ -9,4 +9,5 @@ Here are the persons who contributed to Mono.Xna:
  * Jérémie Laval (Garuma)
  * Ravuya
  * Olivier Dufour (Duff)
+ * Stuart Carnie (Stu)
 

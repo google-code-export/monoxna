@@ -11,6 +11,8 @@ It accepts 3 sounds formats :
 
 http://msdn2.microsoft.com/en-us/library/bb172317.aspx 
 
+XACT .xap file format is described here : http://msdn2.microsoft.com/en-us/library/bb174774.aspx
+
 = XACT API ==
 
 XACT is also an API integrated in DirectSound to manage these file formats both with a high-level and low-level wrapper.
@@ -19,6 +21,6 @@ http://msdn2.microsoft.com/en-us/library/bb172328.aspx
 
 I think Microsoft.Xna uses this native API internally as they did with the XBOX Gamepad (using xinput). Then it wouldn't be of too much hassle to do like this on Windows but what about other systems ?
 
-Should we use native call on Windows and somehow make a managed implementation on other systems ? Do like Mono's libgdiplus library, i.e. with write our own native version of xact so that on Windows Mono.Xna uses MS's Xact and on other systems it uses our own (could take a look at Wine DirectSound implementation and maybe reuse it) ?
+Should we use native call on Windows and somehow make a managed implementation on other systems ? Do like Mono's libgdiplus library, i.e. with write our own native version of xact so that on Windows Mono.Xna uses MS's Xact and on other systems it uses our own (~~could take a look at Wine DirectSound implementation and maybe reuse it~~ apparently there is no implementation of XACT in Wine yet) ?
 
-If we use the managed way, the file parser etc... would be written in managed code and the playback would be assured using either System.Media or P/Invoke into ffmpeg (or other) (maybe make a Tao.FFMpeg ?).
+If we use the managed way, the XACT file parser etc... would be written in managed code and the playback would be assured ~~using either System.Media or P/Invoke into ffmpeg (or other) (maybe make a Tao.FFMpeg ?).~~ using OpenAL for the rendering and FFMpeg (would need a Tao.FFMpeg ?) to retrieve the bare pcm data. The same API would be used if we use the wrapper way but would be implemented as a XACT API.

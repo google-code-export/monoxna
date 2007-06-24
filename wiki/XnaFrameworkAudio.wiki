@@ -9,6 +9,8 @@ It accepts 3 sounds formats :
   * XMA, a special format based on WMA : I think this will be the hardest to use. SDLMIxer doesn't support this neither FFMpeg (unless it's still readable as WMA).
   * AIFF : seems to be a standard format (http://en.wikipedia.org/wiki/AIFF). Looks like some sort of MIDI container ?
 
+==> I think it's also important to support other sounds format than these. If use FFMpeg (described below) we could load pretty much anything. There would be also some additions on the .xap file format but nothing that would break compatibility.
+
 http://msdn2.microsoft.com/en-us/library/bb172317.aspx 
 
 XACT .xap file format is described here : http://msdn2.microsoft.com/en-us/library/bb174774.aspx

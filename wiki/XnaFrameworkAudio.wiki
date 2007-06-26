@@ -74,11 +74,10 @@ separator
 separator
 0x00
 separator
-{{{sub header {
- 17 bytes
- separator
- 2 bytes: size of the corresponding wave file (little-endian)
- separator
- 0x00
- separator
-}}}}--> *seems* to be for each wave file in the bank
+sub header --> *seems* to be for each wave file in the bank
+  17 bytes
+  separator
+  2 bytes: size of the corresponding wave file (little-endian)
+  separator
+  0x00
+  separator

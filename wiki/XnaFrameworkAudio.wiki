@@ -42,6 +42,7 @@ The file consist of a header of variable size with the four letter WBND at the b
 Each value in the xwb's header seems separated with a combination of 3 zero bytes (\0). The header contains the name of the Wave bank but I'm still unsure of the other values.
 
 So far the header is like this :
+{{{
 5 bytes: the word "WBND)"
 separator
 0x30
@@ -81,3 +82,4 @@ sub header --> *seems* to be for each wave file in the bank
   separator
   0x00
   separator
+}}}

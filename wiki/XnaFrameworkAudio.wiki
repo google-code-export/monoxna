@@ -78,7 +78,7 @@ separator
 sub header --> *seems* to be for each wave file in the bank
   17 bytes
   separator
-  2 bytes: size of the corresponding wave file (little-endian)
+  2 or 3 bytes: size of the corresponding wave file (little-endian)
   separator
   0x00
   separator

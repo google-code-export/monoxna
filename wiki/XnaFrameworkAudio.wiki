@@ -91,10 +91,14 @@ To see the explanation of Sound banks see the first link of the page.
 So far the format is like this :
 
 {{{
-4 bytes : the word "SDBK)"
-...
+5 bytes : the word "SDBK)"
+77 bytes : some sort of header with notably the two bytes at offset 0x11 and 0x1A that represent the number of cue and sound (who is who is unknow ;) ) and the number beginning at offset 0x2A (2 bytes ?) which represent the start offset of the cue's name list 
 64 bytes : name of the sound bank
 64 bytes : name of the target Wave Bank
+foreach cue/sound (?) in the sound bank
+  12 bytes subheader where 10th byte is the index (from 1 to ..) of the corresponding wave file in reverse order than the cue list.
+
+
 ...
 }}}
 

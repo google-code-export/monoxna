@@ -83,3 +83,17 @@ sub header --> *seems* to be for each wave file in the bank
   0x00
   separator
 }}}
+
+==.XSB files, Xact Sound Bank ==
+
+To see the explanation of Sound banks see the first link of the page.
+
+So far the format is like this :
+
+{{{
+4 bytes : the word "SDBK)"
+...
+64 bytes : name of the sound bank
+64 bytes : name of the target Wave Bank
+...
+}}}

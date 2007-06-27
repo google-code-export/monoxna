@@ -97,3 +97,13 @@ So far the format is like this :
 64 bytes : name of the target Wave Bank
 ...
 }}}
+
+
+==.XGS files, Xact General Settings ==
+
+The variable name are located at the end of the file separated with a \0 char, properties definition start at offset 0x72 and are so far composed of three float values (4 bytes big-endian) representing in order max value, min value and current value. 
+
+{{{
+
+
+}}}

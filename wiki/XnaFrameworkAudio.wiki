@@ -1,5 +1,7 @@
 #summary Use this page has a sandbox for informations about XACT related file formats and how to implement sound playback from these files in Mono.Xna
 
+See the related [http://code.google.com/p/monoxna/issues/detail?id=19&can=2&q= Audio Issue] to track the Audio namespace's progress.
+
 = XACT files format =
 
 XACT is Microsoft Cross-Platform Audio Creation Tool. It's a GUI tool to assemble sounds, wave, effect etc... in a project and specify some informations about it like volume, when to trigger the sounds, how to store them etc...

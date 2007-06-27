@@ -15,7 +15,7 @@ http://msdn2.microsoft.com/en-us/library/bb172317.aspx
 
 XACT .xap file format is described here : http://msdn2.microsoft.com/en-us/library/bb174774.aspx
 
-The .xap files are processed at compile-time by the Content Pipeline to xwb, xsb and xgs files (XACT Wave Bank, XACT Sound Bank, XACT General Settings). Ideally we could write up the same kind of editor with the possibilities to use any sound format.
+The .xap files are processed at compile-time by the Content Pipeline to xwb, xsb and xgs files (XACT Wave Bank, XACT Sound Bank, XACT General Settings). Ideally we could write up the same kind of editor with the possibilities to use any sound format. EDIT: when the xap project is compiled, the audio data in the xwb seems to be only standard PCM data (i.e. not compressed).
 
 = XACT API ==
 
@@ -27,7 +27,7 @@ I think Microsoft.Xna uses this native API internally as they did with the XBOX 
 
 Should we use native call on Windows and somehow make a managed implementation on other systems ? Do like Mono's libgdiplus library, i.e. with write our own native version of xact so that on Windows Mono.Xna uses MS's Xact and on other systems it uses our own (~~could take a look at Wine DirectSound implementation and maybe reuse it~~ apparently there is no implementation of XACT in Wine yet) ?
 
-If we use the managed way, the XACT file parser etc... would be written in managed code and the playback would be assured ~~using either System.Media or P/Invoke into ffmpeg (or other) (maybe make a Tao.FFMpeg ?).~~ using OpenAL for the rendering and FFMpeg (would need a Tao.FFMpeg ?) to retrieve the bare pcm data. The same API would be used if we use the wrapper way but would be implemented as a XACT API.
+If we use the managed way, the XACT file parser etc... would be written in managed code and the playback would be assured ~~using either System.Media or P/Invoke into ffmpeg (or other) (maybe make a Tao.FFMpeg ?).~~ using OpenAL for 3D rendering (available in latest XNA) or SDLMixer (for basic "flat" rendering) ~~and FFMpeg (would need a Tao.FFMpeg ?) to retrieve the bare pcm data~~-> as i edited, there is only PCM data in the Wave Banks so no need for FFMPEG at this level.
 
 I found a P/Invoke libray and a small audio player sample which use OpenAL for rendering, it's seem to be perfect for what I want to do but I'm unsure of the licence so I will mail the developper about it. -> http://sourceforge.net/projects/sharpffmpeg/
 

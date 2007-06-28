@@ -98,7 +98,7 @@ So far the format is like this :
 64 bytes : name of the sound bank
 64 bytes : name of the target Wave Bank
 foreach cue/sound (?) in the sound bank
-  12 bytes subheader where 10th byte is the index (from 1 to ..) of the corresponding wave file in reverse order than the cue list.
+  12 bytes subheader where starting at 9th byte is the index (from 1 to ..) of the corresponding wave file in reverse order than the cue list (in form of a 4 byte integer).
 
 
 ...

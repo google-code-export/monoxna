@@ -41,7 +41,7 @@ Antti (Sandriman) also raised concern about the problems Mono.Xna might face on 
 
 The file consist of a header of variable size with the four letter WBND at the beginning. Then  the data content of each wave file is put after this header without any separation.
 
-Each value in the xwb's header seems separated with a combination of 3 zero bytes (\0). The header contains the name of the Wave bank but I'm still unsure of the other values.
+~~Each value in the xwb's header seems separated with a combination of 3 zero bytes (\0)~~ It's because the value are represented with a 4 bytes integer. The header contains the name of the Wave bank but I'm still unsure of the other values.
 
 So far the header is like this :
 {{{

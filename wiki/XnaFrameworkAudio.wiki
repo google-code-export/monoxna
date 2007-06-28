@@ -37,6 +37,8 @@ Antti (Sandriman) also raised concern about the problems Mono.Xna might face on 
 
 =Content of XACT related files=
 
+The first goal is to understand sufficiently these formats to playback simple cue (i.e. cue with contains only default values and reference just one wave file).
+
 ==.XWB files, Xact Wave Bank ==
 
 The file consist of a header of variable size with the four letter WBND at the beginning. Then  the data content of each wave file is put after this header without any separation.

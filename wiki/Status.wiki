@@ -4,4 +4,4 @@
 
 = Status = 
 
-[ContentPipeline | Content Pipeline Status]
+[ContentPipeline Content Pipeline Status]

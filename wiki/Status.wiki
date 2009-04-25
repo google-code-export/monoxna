@@ -1,7 +1,11 @@
-#summary Status and plans of the project
+#summary Status of the project
 
 = Introduction =
 
 = Status = 
+
+The project has been dead for a while and as a result the current status is not clearly defined. From initial browsing through the code it seems that most of the work has been done in regards to input, audio and two dimensional graphics. 
+
+The status of the different components will be posted when it has been determined.
 
 [ContentPipeline Content Pipeline Status]

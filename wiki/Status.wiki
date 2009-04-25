@@ -8,4 +8,6 @@ The project has been dead for a while and as a result the current status is not 
 
 The status of the different components will be posted when it has been determined.
 
+== Components ==
+
 [ContentPipeline Content Pipeline Status]

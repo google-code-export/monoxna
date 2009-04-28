@@ -1,4 +1,9 @@
-Here are the persons who contributed to Mono.Xna:
+These are the currently active contributors
+
+ * Lars V. Magnusson (lavima)
+ * Thomas K. (xeethraxyo)
+
+Here are the persons who (used to) contributed to Mono.Xna (and hopefully will do so again):
 
  * Rob Loach (RobLoach)
  * Alan McGovern (_Alan_)
@@ -10,4 +15,3 @@ Here are the persons who contributed to Mono.Xna:
  * Ravuya
  * Olivier Dufour (Duff)
  * Stuart Carnie (Stu)
-

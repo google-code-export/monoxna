@@ -2,12 +2,30 @@
 
 = Introduction =
 
+This page contains the current status of the project, and should be the best place to find new things to fill up your everyday existence.
+
 = Status = 
 
 The project has been dead for a while and as a result the current status is not clearly defined. From initial browsing through the code it seems that most of the work has been done in regards to input, audio and two dimensional graphics. 
 
 The status of the different components will be posted when it has been determined.
 
-== Components ==
+== Graphics ==
 
-[ContentPipeline Content Pipeline Status]
+Undetermined
+
+== Audio == 
+
+There's some information about XACT located [XnaFrameworkAudio here]. Whether or not it is up to date has not yet been determined.
+
+== Input ==
+
+Undetermined
+
+== Networking ==
+
+Undetermined
+
+== Content Pipeline ==
+
+The status of the content pipeline implementation is posted [ContentPipeline here]

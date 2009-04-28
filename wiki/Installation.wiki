@@ -1,0 +1,15 @@
+#summary How to set up development environment
+
+= Introduction =
+
+This page describe the process of the setting up the Mono.Xna development environment.
+
+= Linux =
+
+== MonoDevelop 2.0 ==
+
+ * Download the entire project from the repository
+ * Set executable priviledge on ./tools/Prebuild/prebuild and ./MonoDevelo.sh
+ * Run ./MonoDevelop.sh
+ * Open the generated .sln with MonoDevelop 2.0
+ * Remove the XnaTests from both Debug and Release configuration in order to build

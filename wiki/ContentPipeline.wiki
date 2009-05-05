@@ -2,11 +2,17 @@
 
 = Introduction =
 
-This page contains the development plan and status of the content pipeline implementation
+This page contains the development plan and status of the content pipeline implementation.
 
 
 = Specification =
 
 == MonoDevelop addin ==
 
+The first thing that is going to need attention is the MonoDevelop addin. This will hopefully make the development must more enjoyable than the tedious: build with VS, run with Mono.Xna.
+
+Development have been started in the MonoDevelop.Xna project.
+
 == Class Library ==
+
+The stubs have been created for the entire content pipeline, but so far no implementations have been started. Tasks related to the content pipeline class library will start appearing once the MD addin is operational.

@@ -2,14 +2,36 @@
 
 = Introduction =
 
-This page describe the process of the setting up the Mono.Xna development environment.
+This page describe the process of the setting up the Mono.Xna development environment. The environment is available [http://code.google.com/p/monoxna/source/checkout here].
 
-= Linux =
+= Dependencies =
 
-== MonoDevelop 2.0 ==
+Mono.Xna is dependent on Tao Framework and SDL.NET. The versions referenced in the projects are supplied in ./lib/. To allow for single solution the assemblies should be installed into the GAC instead of referenced directly.
 
- * Download the entire project from the repository
- * Set executable priviledge on ./tools/Prebuild/prebuild and ./MonoDevelo.sh
- * Run ./MonoDevelop.sh
- * Open the generated .sln with MonoDevelop 2.0
- * Remove the XnaTests from both Debug and Release configuration in order to build
+== Linux ==
+
+This approach has been tested in Ubuntu 9.04.
+
+Install the sdldotnet assemblies into the GAC using the following command in the ./lib/ directory:
+
+{{{
+sudo gacutil -i -package sdldotnet-6.1.0 sdldotnet-6.1.0/SdlDotNet.dll
+sudo gacutil -i -package sdldotnet-6.1.0 sdldotnet-6.1.0/Tao.Sdl.dll
+}}}
+
+Copy the sdldotnet-6.1.0.pc file from ./lib/ to /usr/lib/pkgconfig to make the assemblies available under Packages in MonoDevelop.
+
+The same approach is used for the taoframework, but not all parts of the Tao Framework is needed. Run the following commands in the ./lib/ directory:
+
+{{{
+sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.Sdl.dll
+sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.OpenGl.dll
+}}}
+
+Copy the taoframework-2.1.0.pc file from ./lib/ to /usr/lib/pkgconfig to make the assemblies available under Packages in MonoDevelop.
+
+Scripts will eventually be added to make the installation easier.
+
+= MonoDevelop & Visual Studio Solution = 
+
+The solution file in the root directory is all that is needed for development in MonoDevelop 2.0. The Visual Studio support needs testing.

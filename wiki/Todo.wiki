@@ -4,7 +4,6 @@
 
 Create an issue and remove the item from this list when starting development.
 
- * Update Prebuild setup so that XnaTests isn't a part of the Debug and Release configuration (leads to build error)
  * Implement Model class
  * Implement Matrix struct
  * Implement Quaternion struct

@@ -2,8 +2,22 @@
 
 = Todo =
 
-Create an issue and remove the item from this list when starting development.
+This page is structured into open and accepted tasks. The open tasks are open for grabs by any eager contributor while the accepted ones are the tasks for which someone has assumed responsibility.
 
- * Implement Model class
- * Implement Matrix struct
- * Implement Quaternion struct
+== Open Task List ==
+
+This section contains the open task list with planned development tasks. This list should not be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own.
+
+ * Implement Microsoft.Xna.Framework.Graphics.Model class
+ * Implement Microsoft.Xna.Framework.Content.Pipeline.AudioImporters namespace
+ * Implement Microsoft.Xna.Framework.Content.Pipeline.EffectImporter namespace
+ * Implement Microsoft.Xna.Framework.Content.Pipeline.TextureImporter namespace
+ * Implement Microsoft.Xna.Framework.Content.Pipeline.XImporter namespace
+
+*Create an _issue_ and move the item from the _open_ to the _accepted_ list when starting development!*
+
+== Accepted Task List ==
+
+ * Implement Microsoft.Xna.Framework.Content.Pipeline.FBXImporter namespace ([http://code.google.com/p/monoxna/issues/detail?id=34 Issue 34])
+ * Implement Matrix struct ([http://code.google.com/p/monoxna/issues/detail?id=27 Issue 27])
+ * Implement Quaternion struct ([http://code.google.com/p/monoxna/issues/detail?id=28 Issue 28])

@@ -2,6 +2,7 @@ These are the currently active contributors
 
  * Lars V. Magnusson (lavima)
  * Thomas K. (xeethraxyo)
+ * timpambor
 
 Here are the persons who (used to) contributed to Mono.Xna (and hopefully will do so again):
 

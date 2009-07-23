@@ -2,7 +2,7 @@
 
 = Introduction =
 
-This page contains the current status of the project, and should be the best place to find new things to fill up your everyday existence.
+This page contains the current status of the project, and should be the best place to find new things to fill up your everyday existence. But at the present time it's obviously lacking in helpful information.
 
 = Status = 
 
@@ -12,11 +12,11 @@ The status of the different components will be posted when it has been determine
 
 == Graphics ==
 
-Undetermined
+Needs to be determined.
 
 == Audio == 
 
-There's some information about XACT located [XnaFrameworkAudio here]. Whether or not it is up to date has not yet been determined.
+There's some information about XACT located [XnaFrameworkAudio here]. 
 
 == Input ==
 
@@ -28,4 +28,4 @@ Undetermined
 
 == Content Pipeline ==
 
-The status of the content pipeline implementation is posted [ContentPipeline here]
+The development of the content pipeline has been started. Details regarding the status of the content pipeline implementation is posted [ContentPipeline here]

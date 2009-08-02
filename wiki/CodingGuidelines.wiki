@@ -1,0 +1,57 @@
+#summary How to format the code
+
+= Introduction =
+
+In order for the source code to be consistently formatted despite contributor, we need to follow some style conventions. These conventions are inspired by Mono's [http://mono-project.com/Coding_Guidelines coding guidelines] and they should be used as a secondary reference.
+
+= Guidelines =
+
+== Indentation ==
+
+Mono use 8-space indentation, but this creates a lot of whitespace. 4-space indentation is the default setting in both Visual Studio and MonoDevelop, and due to this fact a more natural choice for the preferred indentation style in the monoxna source code.
+
+== Spaces ==
+
+Use a space before an opening parenthesis when calling functions, indexing, loops and tests, like this: 
+
+{{{
+Call (param);
+index [0];
+if (true) ...
+while (true) ...
+}}}
+
+== Brackets ===
+
+Brackets should be placed on a new line for methods, loops and tests:
+
+{{{
+Method ()
+{
+    for (int i=0; i<10; i++)
+    {
+        ...
+    }
+
+    if (true)
+    {
+        ...
+    }
+}
+}}}
+
+Properties have their opening brackets on the same line. This applies to multiline *get* and *set* methods as well.
+
+{{{
+int Property {
+    get { ... }
+    set { ... }
+}
+int Property {
+    get {
+        ...
+    }
+    set {
+        ...
+    }
+}

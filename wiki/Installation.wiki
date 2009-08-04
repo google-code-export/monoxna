@@ -26,6 +26,7 @@ The same approach is used for the taoframework, but not all parts of the Tao Fra
 {{{
 sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.Sdl.dll
 sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.OpenGl.dll
+sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.DevIl.dll
 }}}
 
 Copy the taoframework-2.1.0.pc file from ./lib/ to /usr/lib/pkgconfig to make the assemblies available under Packages in MonoDevelop.

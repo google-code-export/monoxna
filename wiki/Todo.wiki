@@ -1,4 +1,5 @@
 #summary What to do
+#labels Featured
 
 = Todo =
 

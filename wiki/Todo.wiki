@@ -6,9 +6,19 @@ This page is structured into open and accepted tasks. The open tasks are open fo
 
 == Open Task List ==
 
-This section contains the open task list with planned development tasks. This list should not be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own.
+This section contains the open task list with planned development tasks. This list should _not_ be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own.
 
- * Implement Microsoft.Xna.Framework.Graphics.Model class
+=== Microsoft.Xna.Framework.Graphics Namespace ===
+
+ * Implement Model class
+
+=== Microsoft.Xna.Framework.Content.Pipeline Namespace ===
+ 
+ * Implement OpaqueDataDictionary class
+ * Implement XmlImporter class
+
+=== Content Importers ===
+
  * Implement Microsoft.Xna.Framework.Content.Pipeline.AudioImporters namespace
  * Implement Microsoft.Xna.Framework.Content.Pipeline.EffectImporter namespace
  * Implement Microsoft.Xna.Framework.Content.Pipeline.TextureImporter namespace

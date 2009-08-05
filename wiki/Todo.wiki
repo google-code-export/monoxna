@@ -11,8 +11,8 @@ This section contains the open task list with planned development tasks. This li
 
 === NUNIT Tests ===
 
- * Clean up the existing tests and get them working properly
-
+No tasks at the moment
+ 
 === Microsoft.Xna.Framework.Graphics Namespace ===
 
  * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart and ModelMeshPartCollection
@@ -33,6 +33,7 @@ This section contains the open task list with planned development tasks. This li
 
 == Accepted Task List ==
 
+ * Clean up the existing tests and get them working properly ([http://code.google.com/p/monoxna/issues/detail?id=36 Issue 36])
  * Implement Microsoft.Xna.Framework.Content.Pipeline.FBXImporter namespace ([http://code.google.com/p/monoxna/issues/detail?id=34 Issue 34])
  * Implement Matrix struct ([http://code.google.com/p/monoxna/issues/detail?id=27 Issue 27])
  * Implement Quaternion struct ([http://code.google.com/p/monoxna/issues/detail?id=28 Issue 28])

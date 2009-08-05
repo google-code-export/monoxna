@@ -9,9 +9,13 @@ This page is structured into open and accepted tasks. The open tasks are open fo
 
 This section contains the open task list with planned development tasks. This list should _not_ be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own.
 
+=== NUNIT Tests ===
+
+ * Clean up the existing tests and get them working properly
+
 === Microsoft.Xna.Framework.Graphics Namespace ===
 
- * Implement Model class
+ * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart and ModelMeshPartCollection
 
 === Microsoft.Xna.Framework.Content.Pipeline Namespace ===
  

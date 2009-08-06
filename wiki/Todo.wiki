@@ -15,7 +15,14 @@ No tasks at the moment
  
 === Microsoft.Xna.Framework.Graphics Namespace ===
 
- * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart and ModelMeshPartCollection
+ * 92 Methods have to be implemented
+ * 1145 NotSupportedExceptions have to be removed.
+
+ * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart, ModelMeshPartCollection, BasicEffect, DepthStencilBuffer, GammaRamp, GraphicsAdapter, GraphicsDevice, GraphicsDeviceCapabilities, GraphicsResource, IndexBuffer, PresentationParameters, RenderTarget, SpriteBatch, SpriteFont, StateBlock, Texture, VertexBuffer, VertexDeclaration, VertexShader, VertexPositionColor, VertexPositionColorTexture, VertexPositionNormalTexture, VertexPositionTexture and FilterOptions
+
+=== Microsoft.Xna.Framework.Content Namespace ===
+
+ * Implement classes: ContentManager and ContentReader
 
 === Microsoft.Xna.Framework.Content.Pipeline Namespace ===
  

@@ -35,6 +35,7 @@ The NUnit library version 2.4.8 is the default version in the current stable Mon
 
 {{{
 sudo gacutil -i -package nunit-2.4.8 nunit-2.4.8/nunit.core.dll
+sudo gacutil -i -package nunit-2.4.8 nunit-2.4.8/nunit.core.interfaces.dll
 sudo gacutil -i -package nunit-2.4.8 nunit-2.4.8/nunit.framework.dll
 }}}
 

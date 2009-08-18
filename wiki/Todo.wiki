@@ -40,6 +40,7 @@ No tasks at the moment
 
 == Accepted Task List ==
 
+ * Replace SdlDotNet with Tao.Sdl ([http://code.google.com/p/monoxna/issues/detail?id=37 Issue 37])
  * Clean up the existing tests and get them working properly ([http://code.google.com/p/monoxna/issues/detail?id=36 Issue 36])
  * Implement Microsoft.Xna.Framework.Content.Pipeline.FBXImporter namespace ([http://code.google.com/p/monoxna/issues/detail?id=34 Issue 34])
  * Implement Matrix struct ([http://code.google.com/p/monoxna/issues/detail?id=27 Issue 27])

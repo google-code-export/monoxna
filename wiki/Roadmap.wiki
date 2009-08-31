@@ -1,0 +1,21 @@
+#summary Future plans for the monoxna project
+
+= Introduction =
+
+This page is a high level plan for the monoxna project created to facilitate the development towards a common goal. 
+
+For a more detailed list of development tasks, see the [Todo] page. The current status of the project is listed in the [Status] page.
+
+= Current Focus =
+
+The monoxna project was dead for quite a while, and the existing code base seems to less than operational. As a result the current focus is to rewrite some of the existing code to get it working again. 
+
+The old code used SdlDotNet across the board and the XNA interface seems to be lacking in functionality, so all the SdlDotNet code will be removed and replaced with a more functional Tao.Sdl binding.
+
+= Future Plans =
+
+SpriteBatch working
+
+Input working
+
+Content Pipeline support

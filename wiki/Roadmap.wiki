@@ -1,4 +1,5 @@
 #summary Future plans for the monoxna project
+#labels Featured
 
 = Introduction =
 

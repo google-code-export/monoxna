@@ -8,14 +8,18 @@ For a more detailed list of development tasks, see the [Todo] page. The current 
 
 = Current Focus =
 
-The monoxna project was dead for quite a while, and the existing code base seems to less than operational. As a result the current focus is to rewrite some of the existing code to get it working again. 
+The monoxna project was dead for quite a while, and the existing code base seems to be less than operational. As a result the current focus is to rewrite some of the existing code to get it working again. 
 
 The old code used SdlDotNet across the board and the XNA interface seems to be lacking in functionality, so all the SdlDotNet code will be removed and replaced with a more functional Tao.Sdl binding.
 
+Hopefully we'll have a clearer picture of the current status of the project after this work has been done, so that we can be more accurate in our planning in the future
+
 = Future Plans =
 
-SpriteBatch working
+After the initial work of cleaning up and getting the code to work properly again, the main focus will be placed into two dimensional graphics ie the SpriteBatch class. When this class is working properly it would be possible to create a few simple demos that we could show to the world. 
 
-Input working
+Get the input and audio working.
 
-Content Pipeline support
+Content Pipeline support.
+
+3d support

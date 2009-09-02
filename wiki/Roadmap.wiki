@@ -24,3 +24,7 @@ Get the input and audio working.
 Content Pipeline support.
 
 3d support
+
+= Issues =
+
+The current realease of Tao.Sdl and SDL itself doesn't fit the application model used by XNA very well. One of the issues is that SDL doesn't support listing available display modes other than available screen dimensions. This looks to be better supported in the 1.3 release, but sadly no release date have been posted. 

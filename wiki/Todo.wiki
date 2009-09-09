@@ -9,9 +9,13 @@ This page is structured into open and accepted tasks. The open tasks are open fo
 
 This section contains the open task list with planned development tasks. This list should _not_ be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own.
 
+=== General ===
+
+ * Add documentation using ///.
+
 === NUNIT Tests ===
 
-No tasks at the moment
+Due to large rewrites many of the test today needs to be rewritten as well. More details will follow....
  
 === Microsoft.Xna.Framework.Graphics Namespace ===
 

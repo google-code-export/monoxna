@@ -6,22 +6,14 @@ This page describe the process of the setting up the Mono.Xna development enviro
 
 = Dependencies =
 
-Mono.Xna is dependent on Tao Framework and SDL.NET. The versions referenced in the projects are supplied in ./lib/. To allow for single solution the assemblies should be installed into the GAC instead of referenced directly.
+Mono.Xna is dependent on Tao Framework and the NUnit libraries. The versions referenced in the projects are supplied in ./lib/. To allow for single solution the assemblies should be installed into the GAC instead of referenced directly.
 
 == Linux ==
 
-This approach has been tested in Ubuntu 9.04.
+This approach has been tested in Ubuntu 9.04 and openSUSE 11.1.
 
-Install the sdldotnet assemblies into the GAC using the following command in the ./lib/ directory:
-
-{{{
-sudo gacutil -i -package sdldotnet-6.1.0 sdldotnet-6.1.0/SdlDotNet.dll
-sudo gacutil -i -package sdldotnet-6.1.0 sdldotnet-6.1.0/Tao.Sdl.dll
-}}}
-
-Copy the sdldotnet-6.1.0.pc file from ./lib/ to /usr/lib/pkgconfig to make the assemblies available under Packages in MonoDevelop.
-
-The same approach is used for the taoframework, but not all parts of the Tao Framework is needed. Run the following commands in the ./lib/ directory:
+Run the following commands in the ./lib/ directory to install the Tao assemblies 
+utilized in the project:
 
 {{{
 sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.Sdl.dll

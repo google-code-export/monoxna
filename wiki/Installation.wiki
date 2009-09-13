@@ -41,6 +41,10 @@ Download the Tao.Framework 2.1.0:
 
 Start the Tao.Framework-Setup.
 
+Download NUnit installer version 2.4.8: [http://sourceforge.net/projects/nunit/files/NUnit%20Version%202/NUnit-2.4.8-net-2.0.msi/download NUnit-Installer 2.4.8]
+
+Start the NUnit installer.
+
 = MonoDevelop & Visual Studio Solution = 
 
 The solution file in the root directory is all that is needed for development in MonoDevelop 2.0. The Visual Studio support needs testing.

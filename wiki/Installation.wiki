@@ -35,6 +35,12 @@ Copy the nunit-2.4.8.pc file to /usr/lib/pkgconfig to finish up.
 
 Scripts will eventually be added to make the installation easier.
 
+== Windows ==
+Download the Tao.Framework 2.1.0:
+[http://sourceforge.net/projects/taoframework/files/The%20Tao%20Framework/2.1.0/taoframework-2.1.0-setup.exe/download Tao.Framework 2.1.0 Setup Windows]
+
+Start the Tao.Framework-Setup.
+
 = MonoDevelop & Visual Studio Solution = 
 
 The solution file in the root directory is all that is needed for development in MonoDevelop 2.0. The Visual Studio support needs testing.

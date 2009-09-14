@@ -48,3 +48,5 @@ Start the NUnit installer.
 = MonoDevelop & Visual Studio Solution = 
 
 The solution file in the root directory is all that is needed for development in MonoDevelop 2.0. The Visual Studio support needs testing.
+
+The solution contain the MonoDevelop.Xna addin, so to be able to build in Visual Studio, either the dependencies has to be install, or the project has to be skipped during build. 

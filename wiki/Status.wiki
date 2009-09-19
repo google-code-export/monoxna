@@ -12,7 +12,9 @@ The status of the different components will be posted when it has been determine
 
 == Graphics ==
 
-Needs to be determined.
+The 2D graphics interface: SpriteBatch is operational. Simple 2D games have been tested with positive results.
+
+The GraphicsDevice implementation has not yet really been started. There are a couple of problems that must be overcome on the way eg. SDL 1.2 "rough" API.
 
 == Audio == 
 

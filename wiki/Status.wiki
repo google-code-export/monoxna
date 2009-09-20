@@ -22,7 +22,7 @@ There's some information about XACT located [XnaFrameworkAudio here].
 
 == Input ==
 
-Undetermined
+The keyboard is working.
 
 == Networking ==
 

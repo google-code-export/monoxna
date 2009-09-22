@@ -37,15 +37,4 @@ Due to large rewrites many of the test today needs to be rewritten as well. More
 
  * Implement Microsoft.Xna.Framework.Content.Pipeline.AudioImporters namespace
  * Implement Microsoft.Xna.Framework.Content.Pipeline.EffectImporter namespace
- * Implement Microsoft.Xna.Framework.Content.Pipeline.TextureImporter namespace
  * Implement Microsoft.Xna.Framework.Content.Pipeline.XImporter namespace
-
-*Create an _issue_ and move the item from the _open_ to the _accepted_ list when starting development!*
-
-== Accepted Task List ==
-
- * Replace SdlDotNet with Tao.Sdl ([http://code.google.com/p/monoxna/issues/detail?id=37 Issue 37])
- * Clean up the existing tests and get them working properly ([http://code.google.com/p/monoxna/issues/detail?id=36 Issue 36])
- * Implement Microsoft.Xna.Framework.Content.Pipeline.FBXImporter namespace ([http://code.google.com/p/monoxna/issues/detail?id=34 Issue 34])
- * Implement Matrix struct ([http://code.google.com/p/monoxna/issues/detail?id=27 Issue 27])
- * Implement Quaternion struct ([http://code.google.com/p/monoxna/issues/detail?id=28 Issue 28])

@@ -11,7 +11,7 @@ This section contains the open task list with planned development tasks. This li
 
 === General ===
 
- * Add documentation using ///.
+ * Add documentation using ///. But keep it simple and short! A separate project will be started for proper documentation (like monodoc)
 
 === NUNIT Tests ===
 

@@ -7,26 +7,26 @@ This page is structured into open and accepted tasks. The open tasks are open fo
 
 == Open Task List ==
 
-This section contains the open task list with planned development tasks. This list should _not_ be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own.
+This section contains the open task list with planned development tasks. This list should _not_ be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own. The tasks should represent logical groupings, but the can be separated into smaller tasks if desirable.
 
 === General ===
 
- * Add documentation using ///. But keep it simple and short! A separate project will be started for proper documentation (like monodoc)
+ * Add documentation using ///. But keep it simple and short (source documentation rather than API documentation). A separate project will be started for proper documentation (ala monodoc)
 
 === NUNIT Tests ===
 
 Due to large rewrites many of the test today needs to be rewritten as well. More details will follow....
  
 === Microsoft.Xna.Framework.Graphics Namespace ===
-
- * 92 Methods have to be implemented
- * 1145 NotSupportedExceptions have to be removed.
-
- * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart, ModelMeshPartCollection, BasicEffect, DepthStencilBuffer, GammaRamp, GraphicsAdapter, GraphicsDevice, GraphicsDeviceCapabilities, GraphicsResource, IndexBuffer, PresentationParameters, RenderTarget, SpriteBatch, SpriteFont, StateBlock, Texture, VertexBuffer, VertexDeclaration, VertexShader, VertexPositionColor, VertexPositionColorTexture, VertexPositionNormalTexture, VertexPositionTexture and FilterOptions
-
+ 
+ * Improve GraphicsDevice, GraphicsAdapter and GraphicsDeviceManager
+ * Implement VertexBuffer, IndexBuffer and VertexDeclaration
+ * Implement Effect and BasicEffect
+ * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart and ModelMeshPartCollection
+ 
 === Microsoft.Xna.Framework.Content Namespace ===
 
- * Implement classes: ContentManager and ContentReader
+ * Update classes: ContentManager and ContentReader
 
 === Microsoft.Xna.Framework.Content.Pipeline Namespace ===
  

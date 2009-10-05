@@ -4,14 +4,15 @@
 
 This page contains the development plan and status of the content pipeline implementation.
 
+= Development =
 
-= Specification =
+What is the development plans and progress.
 
 == MonoDevelop addin ==
 
-The first thing that is going to need attention is the MonoDevelop addin. This will hopefully make the development must more enjoyable than the tedious: build with VS, run with Mono.Xna.
+The first thing that is going to need attention is the MonoDevelop addin. This will hopefully make the development must more enjoyable than the tedious: build with VS, run with Mono.Xna (which also is in violation of the EULA?)
 
-Development have been started in the MonoDevelop.Xna project.
+Development have been started in the MonoDevelop.Xna project. 
 
 == Class Library ==
 

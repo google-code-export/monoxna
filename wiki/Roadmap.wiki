@@ -1,27 +1,46 @@
-#summary Future plans for the monoxna project
+#summary Plans and ideas for the monoxna project
 #labels Featured
 
 = Introduction =
 
-This page is a high level plan for the monoxna project created to facilitate the development towards a common goal. 
+This page is a high level plan for the monoxna project created to make sure the development are aimed towards a common goal. 
 
-For a more detailed list of development tasks, see the [Todo] page. The current status of the project is listed in the [Status] page.
+For a more detailed list of development tasks, see the [Todo] page, and the current status of the project is listed in the [Status] page.
+
+= General =
+
+First off, since this project is an open source implementation of Microsoft's XNA platform, all the developers have to take special care to not violate the Microsoft EULA. Under no circumstance is it ok to decompile MS XNA to figure out how they do things.
+
+The decision has been made to build this project on top of Tao.Sdl instead of higher level alternatives. Image loading is done using Tao.DevIl.
 
 = Current Focus =
 
-The monoxna project was dead for quite a while, and the existing code base seems to be less than operational. As a result the current focus is to rewrite some of the existing code to get it working again. 
+The project is up and running again, so the focus has shifted away from getting it to work again to adding functionality. There's also a web page up and running at [http://www.monoxna.org]
 
-The old code used SdlDotNet across the board and the XNA interface seems to be lacking in functionality, so all the SdlDotNet code will be removed and replaced with a more functional Tao.Sdl binding.
+== Input Support ==
 
-Hopefully we'll have a clearer picture of the current status of the project after this work has been done, so that we can be more accurate in our planning in the future
+At the moment at least the input from the keyboard is working, though it needs to be tested properly across platforms. The support for several players also needs to be added, but at the moment this isn't supported by SDL (investigate)
+
+The mouse and gamepad support need more work as well. There will be some problems when
+implementing the gamepad though, since SDL currently doesn't support feedback. 
+
+== Audio Support ==
+
+This area has been left mostly alone since the project restarted. It's unsure how much work is needed to get it working again.
+
+== 2d Support ==
+
+Even though the project is up and running again, there's still things to be done to get the 2d functionality finished. 
+
+== Content Pipeline ==
+
+The development of the content pipeline has been started, but it hasn't come that far yet. The first things that needs to be done is to get the MonoDevelop addin to launch the compilers. When this is done, things will speed up a bit.
+
+== Demo Applications ==
+
+When 2d, input and audio is working properly it should be possible to create a few simple demos that we could show to the world, we need to check whether compiling content with MS XNA and using them with monoxna violates the EULA or not. If 
 
 = Future Plans =
-
-After the initial work of cleaning up and getting the code to work properly again, the main focus will be placed into two dimensional graphics ie the SpriteBatch class. When this class is working properly it would be possible to create a few simple demos that we could show to the world. 
-
-Get the input and audio working.
-
-Content Pipeline support.
 
 3d support
 

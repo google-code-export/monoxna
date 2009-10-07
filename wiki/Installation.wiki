@@ -21,7 +21,7 @@ sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.OpenGl.dll
 sudo gacutil -i -package taoframework-2.1.0 taoframework-2.1.0/Tao.DevIl.dll
 }}}
 
-Copy the taoframework-2.1.0.pc file from ./lib/ to /usr/lib/pkgconfig to make the assemblies available under Packages in MonoDevelop.
+Copy the taoframework-2.1.0.pc file from ./lib/ to /usr/lib/pkgconfig to make the assemblies available under Packages in MonoDevelop. If they don't show up you can try manually copying them into /usr/lib/mono/taoframework-2.1.0, and remember to reload MonoDevelop.
 
 The NUnit library version 2.4.8 is the default version in the current stable Mono, but Ubuntu only offers packages for 2.4.7. The following commands can be used to install the correct version.
 

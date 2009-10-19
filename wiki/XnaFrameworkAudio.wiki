@@ -49,45 +49,24 @@ The sub-header for each wave file has a 24 bit size. The corresponding size of t
 
 So far the header is like this :
 {{{
-5 bytes: the word "WBND)"
-separator
-0x30
-separator
-0x60
-separator
-0x90
-separator
-a number
-separator
-a number : start of the first WAV data
-separator
-separator
-separator
-separator
-separator
-a number : start of the first WAV data too
-separator
-3 bytes number : size of all wavs data (little-endian)
-separator
-2 bytes number
-separator
-37bytes : name of the wave bank
-separator
-0x18
-separator
-0x04
-separator
-0x40
-separator
-0x00
-separator
-sub header --> *seems* to be for each wave file in the bank
-  17 bytes
-  separator
-  2 or 3 bytes: size of the corresponding wave file (little-endian)
-  separator
-  0x00
-  separator
+byte {4} - Header (WBND)
+int {4} - Version (3)
+int {4} - Size of Header 1(40)
+int {4} - Size of Header 2(40)
+int {4} - Offset to Details Directory (80)
+int {4} - Length of Details Directory
+int {4} - Offset to Filename Directory (80)
+int {4} - Length of Filename Directory
+int {4} - First File Offset (8192)
+int {4} - Unknown
+int16 {2} - Unknown (1)
+int16 {2} - Unknown (1)
+int {4} - Number of Files
+byte {16} - Archive Filename (null) (without Extension)
+int {4} - Length Of Each Details Entry (24)
+int {4} - Length Of Each Filename Entry (64)
+int {4} - Max padding size between each file (2048)
+int {4} - null
 }}}
 
 ==.XSB files, Xact Sound Bank ==

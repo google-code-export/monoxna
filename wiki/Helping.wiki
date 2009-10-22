@@ -4,6 +4,7 @@ Mono.Xna is in early stages right now, but the end goal is to allow XNA projects
 
 == Project README ==
 
+<pre>
 Mono.Xna Contributing Guidelines
 ================================
 
@@ -23,6 +24,7 @@ Mono.Xna Contributing Guidelines
    changes are made. Complaining about it won't help.
 
 4) Have fun.
+</pre>
 
 == Contributing ==
 

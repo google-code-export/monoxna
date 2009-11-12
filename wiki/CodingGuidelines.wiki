@@ -70,4 +70,4 @@ int Property {
 
 == Regions ==
 
-Create regions around logical member groupings. 
+Create regions around logical member groupings like Constructors, Properties and so on. The regions can also be named according to accessibility eg Public Methods.

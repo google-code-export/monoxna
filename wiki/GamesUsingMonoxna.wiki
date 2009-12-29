@@ -1,5 +1,3 @@
-#summary List of games using monoxna
-
 =List of games using monoxna=
 
 ===FERI Bomberman===

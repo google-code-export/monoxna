@@ -6,9 +6,7 @@ This page contains the current status of the project, and should be the best pla
 
 = Status = 
 
-The project has been dead for a while and as a result the current status is not clearly defined. From initial browsing through the code it seems that most of the work has been done in regards to input, audio and two dimensional graphics. 
-
-The status of the different components will be posted when it has been determined. For more detail on what needs to be done, check out the [Todo todo list].
+The following sections will try to introduce the status of the current major areas of our XNA implementation.
 
 == Graphics ==
 
@@ -22,11 +20,11 @@ There's some information about XACT located [XnaFrameworkAudio here].
 
 == Input ==
 
-The keyboard is working.
+The keyboard and mouse is working, but some work needs to be put into getting the gamepad.
 
 == Networking ==
 
-Undetermined
+Not implemented at the present moment.
 
 == Content Pipeline ==
 

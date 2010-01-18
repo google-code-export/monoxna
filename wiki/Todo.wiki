@@ -9,13 +9,15 @@ This page is structured into open and accepted tasks. The open tasks are open fo
 
 This section contains the open task list with planned development tasks. This list should _not_ be interpreted as a complete list of remaining work, but more a guide for those who want to contribute without the hassle of finding tasks on their own. The tasks should represent logical groupings, but the can be separated into smaller tasks if desirable.
 
-=== General ===
+=== Documentation ===
 
- * Add documentation using ///. But keep it simple and short (source documentation rather than API documentation). A separate project will be started for proper documentation (ala monodoc)
+ * We need to start a proper documentation. The most obvious solution would be to integrate it with the monodoc project, but we need to figure out our possibilities.
+ * The web page needs more information about what MonoXNA is besides the fact that we aim to be an open source replacement of MS XNA
 
 === NUNIT Tests ===
-
-Due to large rewrites many of the test today needs to be rewritten as well. More details will follow....
+ 
+ * Most of the tests are successful, but the ones that are not need to be fixed.
+ * Many of the tests use TestHelper.ApproximatelyEqual() to test the values. This method should be revised to allow better control.
  
 === Microsoft.Xna.Framework.Graphics Namespace ===
  

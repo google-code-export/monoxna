@@ -6,13 +6,18 @@ This page contains the development plan and status of the content pipeline imple
 
 = Development =
 
-What is the development plans and progress.
+Present the development plans and the status of implementation.
 
 == MonoDevelop addin ==
 
 The first thing that is going to need attention is the MonoDevelop addin. This will hopefully make the development must more enjoyable than the tedious: build with VS, run with Mono.Xna.
 
-Development have been started in the MonoDevelop.Xna project, but there has been a number of issues along the way. We are in dialog with the developers of MonoDevelop so hopefully the problems will be solved shortly.
+Development have been started in the MonoDevelop.Xna project, but there has been a number of issues getting the desired functionality:
+ * MonoDevelop don't by default allow nested projects that are not part of the parent solution. The default command handler chain require the parent solution to be set in the projects, and the only way to set it is to add it to the solution.
+ * XNA solution files (.sln) contain a weird reference to the nested content project without actually referencing it like a normal project. The good news is that this reference seems to be inactive (VS doesn't complain or change appearance if the reference is removed, and the reference doesn't appear to re-added after saves).
+ * The nested content project have been implemented as a DotNetProjectSubtype which don't in the current version of MD support alternative filename extensions other than the default .csproj. The solution could be to implement the project as a Project subtype, but this would require rewriting much of the functionality already provided by implementing as DotNetProjectSubtype. An alternative suggested by lluis was to go around the standard save/load pipeline. There are an alternative way of loading which support specifying the filename manually, but I can't find a corresponding save method. 
+
+I've sent an email to the MD development mailing list about these problems and are currently awaiting the response. While waiting I've started developing a patch that would allow the functionality we need to develop an addin in MD. This would make things a whole lot easier, but it remains to see if they accept it once complete. The changes doesn't affect the default behavior, so hopefully they will.
 
 == Class Library ==
 

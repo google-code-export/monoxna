@@ -10,6 +10,40 @@ Mono.Xna is dependent on Tao Framework and the NUnit libraries. The versions ref
 
 == Linux ==
 
+===Ubuntu users!===
+Ubuntu 9.10 has all dependences in default repository! You can install them in two ways.
+
+*First one* is using Terminal:
+Open Terminal.
+Programs -> Accessories -> Terminal
+Copy and past next 2 lines seperately (second is longer, but it should be in one line)
+{{{
+sudo apt-get update
+sudo apt-get install libtaoframework-devil1.6-cil libtaoframework-openal1.1-cil libtaoframework-sdl1.2-cil libdevil1c2 libtaoframework-devil1.6-cil libnunit2.4-cil monodevelop monodevelop-nunit
+}}}
+If you are asked for approval just type "y" and press "Enter"
+
+
+*Second* is using Synaptic:
+Go to System -> Administration -> Synaptic
+Tick following packets
+{{{
+- libtaoframework-devil1.6-cil
+- libtaoframework-openal1.1-cil
+- libtaoframework-sdl1.2-cil
+- libdevil1c2
+- libtaoframework-devil1.6-cil
+- libnunit2.4-cil
+- monodevelop
+- monodevelop-nunit
+}}}
+
+MonoDevelop should be fine with all references except NUnit.
+
+*INFO:* NUnit in Ubuntu 9.10 is still 2.4.7 (2.4.8 expected), but you should add new reference from your GAC in test project for unit testing.
+
+
+===Manual approach===
 This approach has been tested in Ubuntu 9.04 and openSUSE 11.1.
 
 Run the following commands in the ./lib/ directory to install the Tao assemblies 
@@ -44,6 +78,10 @@ Start the Tao.Framework-Setup.
 Download NUnit installer version 2.4.8: [http://sourceforge.net/projects/nunit/files/NUnit%20Version%202/NUnit-2.4.8-net-2.0.msi/download NUnit-Installer 2.4.8]
 
 Start the NUnit installer.
+
+== Mac OS X ==
+
+We need contributers with Apple computer.
 
 = MonoDevelop & Visual Studio Solution = 
 

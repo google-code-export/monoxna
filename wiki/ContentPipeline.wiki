@@ -19,6 +19,10 @@ Development have been started in the MonoDevelop.Xna project, but there has been
 
 I've sent an email to the MD development mailing list about these problems and are currently awaiting the response. While waiting I've started developing a patch that would allow the functionality we need to develop an addin in MD. This would make things a whole lot easier, but it remains to see if they accept it once complete. The changes doesn't affect the default behavior, so hopefully they will.
 
+The patches I created to ease the development is currently available under the content pipeline implementation status issue [http://code.google.com/p/monoxna/issues/detail?id=26]
+
+As of now the MD addin adds support for the project type of both XNA project and nested content project. The nested content projects have the proper extension and is visible under the parent XNA project. The addin also has support for two custom file types (Xml and Sprite). Content file properties have same three fields available in VS (Name, Importer and Processor).
+
 == Class Library ==
 
 The stubs have been created for the entire content pipeline, but so far no implementations have been started. Specific todo tasks related to the content pipeline class library will start appearing once the MD addin is operational to ensure that they easily can be tested

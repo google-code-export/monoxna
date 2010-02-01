@@ -17,11 +17,7 @@ Development have been started in the MonoDevelop.Xna project, but there has been
  * XNA solution files (.sln) contain a weird reference to the nested content project without actually referencing it like a normal project. The good news is that this reference seems to be inactive (VS doesn't complain or change appearance if the reference is removed, and the reference doesn't appear to re-added after saves).
  * The nested content project have been implemented as a DotNetProjectSubtype which don't in the current version of MD support alternative filename extensions other than the default .csproj. The solution could be to implement the project as a Project subtype, but this would require rewriting much of the functionality already provided by implementing as DotNetProjectSubtype. An alternative suggested by lluis was to go around the standard save/load pipeline. There are an alternative way of loading which support specifying the filename manually, but I can't find a corresponding save method. 
 
-I've sent an email to the MD development mailing list about these problems and are currently awaiting the response. While waiting I've started developing a patch that would allow the functionality we need to develop an addin in MD. This would make things a whole lot easier, but it remains to see if they accept it once complete. The changes doesn't affect the default behavior, so hopefully they will.
-
-The patches I created to ease the development is currently available under the content pipeline implementation status issue [http://code.google.com/p/monoxna/issues/detail?id=26]
-
-As of now the MD addin adds support for the project type of both XNA project and nested content project. The nested content projects have the proper extension and is visible under the parent XNA project. The addin also has support for two custom file types (Xml and Sprite). Content file properties have same three fields available in VS (Name, Importer and Processor).
+As of now the MD addin adds support for the project type of both XNA project and nested content project. The nested content projects do not have the proper extension but is visible under the parent XNA project like it should. The addin also has support for two custom file types (Xml and Sprite). Content file properties have same three fields available in VS (Name, Importer and Processor).
 
 == Class Library ==
 

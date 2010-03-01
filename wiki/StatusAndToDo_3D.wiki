@@ -1,0 +1,58 @@
+=Introduction=
+This page was made specially for support of *MonoXNA 3D*. Implementation of 3D for MonoXNA has begun before but and there are only some classes that are (partially) implemented.
+
+
+=Status=
+Many thing need to be done to draw first triangle. We are trying to do some NeHe lessons, since they goes with OpenGL from the most basic to more advanced. NeHe is chosen because of OpenGL, which is used ad 3D library. There is XNA implementation of NeHe lessons, but it's outdated (XNA 2.0, VisualStudio 2005). We are making for for XNA 3.1 and VisualStudio 2008. The code of _old_ XNA NeHe can be found here: http://www.gamedev.net/community/forums/topic.asp?topic_id=464662
+
+==Status of exiting classes==
+There are many classes that has been started. Here is going to be status of those classes.
+_It's logical that classes will be going from TODO section here :)_
+
+
+=TODO=
+Here will be listed Classes and methods, which are to be implement.
+Note, that at this time, we are trying to support most basic 3D. HLSL will be supported in the future.
+_If someone want to make HLSL to GLSL and it's support, he/she is most wellcome. :)_
+
+==Urgent==
+Here are classes that are urgent to implement
+
+===Matrix.cs===
+ * `public static Matrix CreatePerspectiveFieldOfView(float fieldOfView, float aspectRatio, float zNearPlane, float zFarPlane)`
+
+===GraphicsDevice.cs===
+ * `public void Clear(ClearOptions options, Color color, float depth, int stencil)`
+ * `public void DrawPrimitives(PrimitiveType primitiveType, int startVertex, int primitiveCount) throw new NotImplementedException();`
+ * `public void DrawUserPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int primitiveCount)  throw new NotImplementedException();`
+
+===Effect.cs===
+ * `public void Begin() { throw new NotImplementedException(); }	`	
+ * `public void End() { throw new NotImplementedException(); }`
+ * `public EffectTechnique CurrentTechnique { get { throw new NotImplementedException(); } set { throw new NotImplementedException(); } }`
+ * `public void CommitChanges() { throw new NotImplementedException(); }`
+
+===BasicEffect.cs===
+ * `public VertexPositionColor(Vector3 position, Color color) { throw new NotImplementedException(); }`
+
+===EffectParameter.cs===
+ * `public Matrix GetValueMatrix() { throw new NotImplementedException(); }`
+ * `public Vector3 GetValueVector3() { throw new NotImplementedException(); }`
+
+===EffectPass.cs===
+ * `public void DrawUserPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int primitiveCount)`
+
+===EffectPass===
+ * `public sealed class EffectPass {}`
+
+===EffectTechnique.cs===
+ * `public EffectPassCollection Passes  get { throw new NotImplementedException(); }`
+
+
+==Adidional==
+_here will be listed cases and methods that are not urgent to make first 3D sample_
+
+---
+
+=Comments=
+_Everyone can leave comment here_

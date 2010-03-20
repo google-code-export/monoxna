@@ -28,7 +28,7 @@ Mono.Xna Contributing Guidelines
 
 == Contributing ==
 
-If you wish to contribute to the Mono.Xna project, please take a look at the [Todo todo list], and let us know where you feel you can contribute. An irc channel is also available at #monoxna on the GimpNET irc server for contacting the developers directly.
+If you wish to contribute to the Mono.Xna project, please take a look at the [Todo todo list], and let us know where you feel you can contribute. An irc channel is also available at #monoxna on the GimpNET irc server (irc.gimp.net) for contacting the developers directly.
 
 We are interested in recieving feedback on what areas we need to focus on implementing in the future. Such requests can be posted either as an issue in the google code project or posted in our forum at http://www.monoxna.org/forum/
 

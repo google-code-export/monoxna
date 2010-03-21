@@ -21,9 +21,29 @@ This section contains the open task list with planned development tasks. This li
  
 === Microsoft.Xna.Framework.Graphics Namespace ===
  
- * Improve GraphicsDevice, GraphicsAdapter and GraphicsDeviceManager
+ * Improve GraphicsDevice
+   # `public void Clear(ClearOptions options, Color color, float depth, int stencil)`
+   # `public void DrawPrimitives(PrimitiveType primitiveType, int startVertex, int primitiveCount)`
+   # `public void DrawUserPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int primitiveCount)`
+ * Improve GraphicsAdapter and Improve GraphicsDeviceManager
+ * Improve Matrix
+   # `public static Matrix CreatePerspectiveFieldOfView(float fieldOfView, float aspectRatio, float zNearPlane, float zFarPlane)`
  * Implement VertexBuffer, IndexBuffer and VertexDeclaration
- * Implement Effect and BasicEffect
+ * Implement Effect
+   # `public void Begin() {}`	
+   # `public void End() {}`
+   # `public EffectTechnique CurrentTechnique { get {} set {} }`
+   # `public void CommitChanges() {}`
+ * Implement BasicEffect
+   # `public VertexPositionColor(Vector3 position, Color color) {}`
+ * Implement EffectParameter
+   # `public Matrix GetValueMatrix() {}`
+   # `public Vector3 GetValueVector3() {}`
+ * Implement EffectPass
+   # `public void DrawUserPrimitives<T>(PrimitiveType primitiveType, T[] vertexData, int vertexOffset, int primitiveCount)`
+   # `public sealed class EffectPass {}`
+ * EffectTechnique
+   # `public EffectPassCollection Passes  get {}`
  * Implement classes: Model, ModelBone, ModelBoneCollection, ModelEffectCollection, ModelMesh, ModelMeshCollection, ModelMeshPart and ModelMeshPartCollection
  
 === Microsoft.Xna.Framework.Content Namespace ===

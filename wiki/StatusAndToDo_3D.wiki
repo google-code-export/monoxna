@@ -4,7 +4,7 @@ This page was made specially for support of *MonoXNA 3D*. Implementation of 3D f
 
 
 =Status=
-Many thing need to be done to draw first triangle. We are trying to do some NeHe lessons, since they goes with OpenGL from the most basic to more advanced. NeHe is chosen because of OpenGL, which is used ad 3D library. There is XNA implementation of NeHe lessons, but it's outdated (XNA 2.0, VisualStudio 2005). We are making for for XNA 3.1 and VisualStudio 2008. The code of _old_ XNA NeHe can be found here: http://www.gamedev.net/community/forums/topic.asp?topic_id=464662
+Many thing need to be done to draw first triangle. We are trying to implement MonoXNA to run NeHe lessons, since they goes with OpenGL from the most basic to more advanced. NeHe is chosen because of OpenGL, which is used ad 3D library. There is XNA implementation of NeHe lessons, but it's outdated (XNA 2.0, VisualStudio 2005). We are making for for XNA 3.1 and VisualStudio 2008. The code of _old_ XNA NeHe can be found here: http://www.gamedev.net/community/forums/topic.asp?topic_id=464662
 
 ==Status of exiting classes==
 There are many classes that has been started. Here is going to be status of those classes.

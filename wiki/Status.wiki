@@ -18,7 +18,7 @@ The 2D graphics interface: SpriteBatch is operational. Simple 2D games have been
 
 === 3D Graphics ===
 
-The status of the implementation of 3D graphics in MonoXNA is posted 3D.
+The status of the implementation of 3D graphics in MonoXNA is posted in the [3D] wiki page.
 
 == Audio == 
 

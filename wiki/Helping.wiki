@@ -1,3 +1,5 @@
+#summary How can you help
+
 == Status of Mono.Xna ==
 
 Mono.Xna is in early stages right now, but the end goal is to allow XNA projects to be compiled and run on platforms other then Windows, without having to change any code. For more detail go the [Status] page.

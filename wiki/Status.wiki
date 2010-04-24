@@ -18,9 +18,7 @@ The 2D graphics interface: SpriteBatch is operational. Simple 2D games have been
 
 === 3D Graphics ===
 
-The 3D Graphics is not yet working at the moment. There are many classes that are placed in code, but most only "templates" (NotImplement).
-Some classes need to be added, since MonoXNA started with XNA and XNA changed structure trough versions.
-We are trying to implement 3D Primitives at the moment.
+The status of the implementation of 3D graphics in MonoXNA is posted [3D here].
 
 == Audio == 
 

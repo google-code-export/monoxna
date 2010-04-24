@@ -18,11 +18,11 @@ The 2D graphics interface: SpriteBatch is operational. Simple 2D games have been
 
 === 3D Graphics ===
 
-The status of the implementation of 3D graphics in MonoXNA is posted in the [3D] wiki page.
+The status of the implementation of 3D graphics in MonoXNA is posted in the [3D 3D page].
 
 == Audio == 
 
-There's some information about XACT located [XnaFrameworkAudio here]. 
+There's some information about XACT located in the [XnaFrameworkAudio XnaFrameworkAudio page]. 
 
 == Input ==
 
@@ -34,4 +34,4 @@ Not implemented at the present moment.
 
 == Content Pipeline ==
 
-The development of the content pipeline has been started. Details regarding the status of the content pipeline implementation is posted [ContentPipeline here]
+The development of the content pipeline has been started. Details regarding the status of the content pipeline implementation is posted in the [ContentPipeline ContentPipeline page]

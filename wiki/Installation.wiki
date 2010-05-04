@@ -13,15 +13,15 @@ Mono.Xna is dependent on Tao Framework and the NUnit libraries. The versions ref
 ===Ubuntu users!===
 Ubuntu 9.10 has all dependences in default repository! You can install them in two ways.
 
-*First one* is using Terminal:
+*First one* _(quick)_ is using Terminal:
 Open Terminal.
 Programs -> Accessories -> Terminal
-Copy and past next 2 lines seperately (second is longer, but it should be in one line)
+Copy and past next 2 lines separately (second is longer, but it should be in one line)
 {{{
 sudo apt-get update
-sudo apt-get install libtaoframework-devil1.6-cil libtaoframework-openal1.1-cil libtaoframework-sdl1.2-cil libdevil1c2 libtaoframework-devil1.6-cil libnunit2.4-cil monodevelop monodevelop-nunit
+sudo apt-get install libtaoframework-devil1.6-cil libtaoframework-openal1.1-cil libtaoframework-sdl1.2-cil libdevil1c2 libtaoframework-opengl3.0-cil libnunit2.4-cil monodevelop monodevelop-nunit
 }}}
-If you are asked for approval just type "y" and press "Enter"
+If you are asked for approval just type "Y" and press "Enter"
 
 
 *Second* is using Synaptic:
@@ -30,9 +30,9 @@ Tick following packets
 {{{
 - libtaoframework-devil1.6-cil
 - libtaoframework-openal1.1-cil
+- libtaoframework-opengl3.0-cil
 - libtaoframework-sdl1.2-cil
 - libdevil1c2
-- libtaoframework-devil1.6-cil
 - libnunit2.4-cil
 - monodevelop
 - monodevelop-nunit

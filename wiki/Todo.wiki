@@ -18,6 +18,10 @@ This section contains the open task list with planned development tasks. This li
  
  * Most of the tests are successful, but the ones that are not need to be fixed.
  * Many of the tests use TestHelper.ApproximatelyEqual() to test the values. This method should be revised to allow better control.
+
+=== Framework compatibility with XNA 3.1 ===
+
+ * We need to check the public API to make sure it matches MS XNA 3.1
  
 === Microsoft.Xna.Framework.Graphics Namespace ===
  

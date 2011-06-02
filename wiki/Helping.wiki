@@ -1,6 +1,7 @@
 #summary How can you help
+#labels Featured
 
-== Status of Mono.Xna ==
+== Status of MonoXNA ==
 
 Mono.Xna is in early stages right now, but the end goal is to allow XNA projects to be compiled and run on platforms other then Windows, without having to change any code. For more detail go the [Status] page.
 
@@ -30,12 +31,14 @@ Mono.Xna Contributing Guidelines
 
 == Contributing ==
 
-If you wish to contribute to the Mono.Xna project, please take a look at the [Todo todo list], and let us know where you feel you can contribute. An irc channel is also available at #monoxna on the GimpNET irc server (irc.gimp.net) for contacting the developers directly.
+If you wish to contribute to the Mono.Xna project, please take a look at the [Todo todo list], and let us know where you feel you can contribute on our mailing list. An irc channel is also available at #monoxna on the GimpNET irc server (irc.gimp.net) for contacting the developers directly.
 
-We are interested in recieving feedback on what areas we need to focus on implementing in the future. Such requests can be posted either as an issue in the google code project or posted in our forum at http://www.monoxna.org/forum/
+*Patches can either be sent to the mailing list or attached to an issue.*
+
+We are interested in recieving feedback on what areas we need to focus on implementing in the future. Such requests can be posted either as an issue in the google code project or posted in mailing list.
 
 == Subversion access ==
 
-Mono.Xna's source code is kept in the Google Code subversion repository. For more informations click on the `Source` tab. 
+MonoXNA's source code is kept in the Google Code subversion repository. For more informations click on the `Source` tab. 
 
-NB: if you used previously the Subversion repository located on the Mono Project server please update to this new repository.
+Since this project needs more contributors we will give commit access to new developers after only a couple of initial patches.

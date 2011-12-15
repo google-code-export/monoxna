@@ -90,7 +90,13 @@ starting at 0xD3, foreach cue/sound (?) in the sound bank
 
 ==.XGS files, Xact General Settings ==
 
-The variable name are located at the end of the file separated with a \0 char, properties definition start at offset 0x72 and are so far composed of three float values (4 bytes big-endian) representing in order max value, min value and current value. 
+The variable name are located at the end of the file separated with a \0 char, ~~properties definition start at offset 0x72 and~~ are so far composed of three float values (4 bytes big-endian) representing in order max value, min value and current value.
+
+The XGS file seems to be comprised of a header that has some information, such as counts and file offsets, after which properties/settings for categories, variables and RPC curves are embedded, in that order. From there, blocks of strings for category and variable names follow (they have some file offsets pointing to specific strings before the actual block of strings). The order of the names correlate to the properties of the earlier blocks.
+
+Here is a more detailed documentation. There are still some unknowns but it is largely mapped out.
+
+http://pastebin.com/T1MwUfvH
 
 {{{
 

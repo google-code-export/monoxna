@@ -96,9 +96,126 @@ The XGS file seems to be comprised of a header that has some information, such a
 
 Here is a more detailed documentation. There are still some unknowns but it is largely mapped out.
 
-http://pastebin.com/T1MwUfvH
-
 {{{
+struct XGS_FILE {
+	struct XGS_HEADER	hdr;
+	struct XGS_CATEGORY	cats[hdr.cat_count];	// refer to cat strings in same order
+	struct XGS_VARIABLE	vars[hdr.var_count];	// refer to var strings in same order
+	struct XGS_RPS_CURVE	curves[hdr.rpc_count];
+	BYTE			unkn_block1[32];	// no idea what goes on here
+	struct XGS_CAT_NAMES	cat_names;
+	BYTE			unkn_block2[32];	// ditto
+	struct XGS_VAR_NAMES	var_names;
+};
 
+struct XGS_HEADER {
+	DWORD	magic;			// should be XGSF
+	WORD	content_ver;		// either 47 (XACT3 tool) or 45 (XACT2 tool)
+	WORD	common_ident;		// unknown, but seems to be 0x002A across all files
+					// perhaps the XACT version?
+	WORD	unkn_mem1;		// unknown, maybe something to do with the last
+					// modified values
+	DWORD	last_mod_low;		// lower 32 bits of last modified date
+	DWORD	last_mod_high;		// higher 32 bits of last modified date
+	BYTE	unkn_mem2;		// unknown, seems to stay 0x03
+	WORD	cat_count;		// count of categories
+	WORD	var_count;		// count of variables
+	WORD	unkn_mem3;		// unknown, seems to always be 0x16
+	WORD	unkn_mem4;		// unknown, seems to always be 0x16
+	WORD	rpc_count;		// count of runtime parameter control curves
+	WORD	dsp_count;		// count of dsp effect presets (only Microsoft Reverbs?)
+	WORD	dsp_param_count;	// count of dsp effect params (only 22?)
+	DWORD	cat_pos;		// position of first category settings
+	DWORD	var_pos;		// position of first variable settings
+	DWORD	unkn_pos1;		// unknown, leads to a short with value of 1?
+	DWORD	unkn_pos2;		// unknown, leads to another position that leads to cat names?
+	DWORD	unkn_pos3;		// unknown, two shorts of values 2 and 3?
+	DWORD	unkn_pos4;		// unknown, leads to another position that leads to var names?
+	DWORD	cat_name_pos;		// leads to position of first cat name
+	DWORD	var_name_pos;		// leads to position of first var name
+	DWORD	rpc_pos;		// leads to position of first RPC curve
+	DWORD	dsp_pos;		// leads to position of first dsp effect preset
+	DWORD	dsp_param_pos		// leads to position of first dsp effect parameters
+};
 
+// instance limiting flags
+// behaviour flags (reside in upper 5 bits of the byte)
+#define FAIL_TO_PLAY 			0x00
+#define QUEUE				0x01
+#define REPLACE_LOWEST_PRIORITY		0x04
+#define REPLACE_OLDEST			0x02
+#define REPLACE_QUIETEST		0x03
+// cross fade type flags (reside in lower 3 bits of byte)
+#define XFADE_LINEAR			0x00
+#define XFADE_LOG			0x01
+#define XFADE_EQL_POW			0x02
+
+// visibility flags (work like normal flags usually do)
+#define BG_MUSIC			0x01
+#define PUBLIC				0x02
+#define PRIVATE				0x00	// aka the 2 bit is off
+
+struct XGS_CATEGORY {
+	BYTE	max_instances;		// maximum number of instances (if 0xFF, then there is no limit)
+	WORD	fade_in;		// fixed point (1000 = 1.000) of fade in (in seconds)
+	WORD	fade_out;		// fixed point (1000 = 1.000) of fade out (in seconds)
+	BYTE	inst_flags;		// flags for instance limiting, refer to consts above
+	WORD	unkn_mem1;		// unknown, seems to be 0xFFFF for Default and 0x0000 for everyone else
+	BYTE	volume;			// don't know how to intrepert this, but 0xFF is 6.0, 0xB4 is 0.0
+					// and 0x00 is -96.0
+	BYTE	visibility_flags;	// flags for visibility, refer to  constants above
+};
+
+// variable settings flags
+#define PUBLIC				0x01	// bit is off for PRIVATE
+#define READ_ONLY			0x02	// bit is off for READWRITE
+#define CUE_INSTANCE			0x04	// bit is off for GLOBAL
+#define RESERVED			0x08
+
+struct XGS_VARIABLE {
+	BYTE	flags;			// various flags
+	float	init_val;		// the starting value
+	float	min_val;		// minimum value
+	float	max_val;		// maximum value
+};
+
+// parameter constants
+#define VOLUME		0x00
+#define PITCH		0x01
+#define REVERB		0x02	// unsure if 2 is reverb
+#define FILTER_FREQ	0x03
+#define FILTER_Q_FACTOR	0x04
+
+struct XGS_RPC_CURVE {
+	WORD	var_ndx;		// what variable this curve involves
+	BYTE	pt_count;		// number of points in the curve
+	SHORT	param;			// which parameter the curve affects
+					// refer to the above constants
+	struct XGS_RPS_POINT[pt_count];	// all the curve points
+};
+
+// curve type constants
+#define LINEAR		0x00
+#define FAST		0x01
+#define SLOW		0x02
+#define SINCOS		0x03
+
+struct XGS_RPS_POINT {
+	float	x;			// the X coordinate of the point
+	float	y;			// the y coordinate of the point
+	BYTE	type;			// what type of curve its going to be to the next
+					// refer to the above constants
+};
+
+struct XGS_CAT_NAMES {
+	DWORD	offsets[var_count];	// bunch of offsets to specific strings, though commonly
+					// separated by 0xFFFF shorts. will doc later
+	char	string_block;		// one big block of null terminated strings. 
+};
+
+struct XGS_VAR_NAMES {
+	DWORD	offsets[var_count];	// bunch of offsets to specific strings, though commonly
+					// separated by 0xFFFF shorts. will doc later
+	char	string_block;		// one big block of null terminated strings. 
+};
 }}}
